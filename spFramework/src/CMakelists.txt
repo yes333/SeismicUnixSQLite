@@ -4,9 +4,9 @@ project(SPFramework DESCRIPTION "original spDB version")
 
 add_library(SPFramework STATIC SPAccessors.cpp SPBaseUtil.cpp SPProcessor.cpp)
 
-target_include_directories(SPFramework PUBLIC $ENV(CWPROOT)/include)
+target_include_directories(SPFramework PUBLIC $ENV{CWPROOT}/include)
 
-target_link_directories(SPFramework PUBLIC $ENV(CWPROOT)/lib)
+target_link_directories(SPFramework PUBLIC $ENV{CWPROOT}/lib)
 
 target_link_libraries(SPFramework PUBLIC su par cwp)
 
