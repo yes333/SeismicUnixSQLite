@@ -1,0 +1,7 @@
+
+add_executable(spUnitTest UnitTests.cpp)
+
+target_link_libraries(spUnitTest PUBLIC SPFramework SPSqliteUtils)
+target_link_libraries(spUnitTest PUBLIC sqlite3)
+
+install(TARGETS spUnitTest DESTINATION bin)

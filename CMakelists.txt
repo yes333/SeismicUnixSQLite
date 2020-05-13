@@ -22,3 +22,6 @@ add_subdirectory(spdbread)
 add_subdirectory(spdbwrite)
 
 add_subdirectory(spPython)
+
+add_subdirectory(spFrameTest)
+add_subdirectory(spUnitTests)

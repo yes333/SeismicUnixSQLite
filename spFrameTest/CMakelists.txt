@@ -1,0 +1,6 @@
+
+add_executable(spFrameTest TestFrame.cpp)
+
+target_link_libraries(spFrameTest PUBLIC SPFramework SPSqliteUtils)
+
+install(TARGETS spFrameTest DESTINATION bin)
