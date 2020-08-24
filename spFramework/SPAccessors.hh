@@ -126,7 +126,7 @@ public:
 	}
 
 	double getDouble(void* area) {
-		throw SPException("Can not convert double to int type");
+		throw SPException("Can not convert int type to double!");
 	}
 
 	bool isInt() {

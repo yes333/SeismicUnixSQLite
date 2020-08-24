@@ -1,8 +1,9 @@
 //============================================================================
 // Name        : SPAccessors.cpp
 // Author      : Lin Li, Aristool AG Switzerland
-// Version     : 1.0, July 2008
-// Copyright   : READ group Norway, all rights reserved
+// Version     : 1.0, July 2008, 1.1, June 2020
+// Last updated: Sanyu Ye, SoftSeis
+// Copyright   : SoftSeis, Oslo Norway, all rights reserved
 //============================================================================
 #include "SPAccessors.hh"
 
@@ -20,7 +21,7 @@ template<> void SPPicker<double>::setDouble(double data, void* area) {
 }
 
 template<> int SPPicker<double>::getInt(void* area) {
-	throw SPException("Can not convert int type to double");
+	throw SPException("Can not convert double type to int");
 }
 
 template<> double SPPicker<double>::getDouble(void* area) {
@@ -42,7 +43,24 @@ template<> int SPPicker<float>::getInt(void* area) {
 template<> double SPPicker<float>::getDouble(void* area) {
 	return (double)*(float*)(((char*)area) + getOffset());
 }
+
+template<> int SPPicker<int>::getInt(void* area) {
+	return (int)*(int*)(((char*)area) + getOffset());
 }
+
+template<> int SPPicker<short>::getInt(void* area) {
+	return (int)*(short*)(((char*)area) + getOffset());
+}
+
+template<> int SPPicker<unsigned short>::getInt(void* area) {
+	return (int)*(unsigned short*)(((char*)area) + getOffset());
+}
+
+/** dosen't work, tested by Sanyu
+template<> double SPPicker<int>::getDouble(void* area) {
+	int v = *(int*)(((char*)area) + getOffset());
+	return static_cast<double> (v);
+} */
 
 string& SPAbstractPicker::getString(void* area) {
 	static string buf;
@@ -86,4 +104,6 @@ void SPCopyMachine::run(void* fromBase, void* toBase) {
 	for (unsigned int i = 0; i < items.size(); ++i) {
 		items[i]->run(fromBase, toBase);
 	}
+}
+
 }
