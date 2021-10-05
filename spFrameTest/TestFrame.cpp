@@ -1,8 +1,8 @@
 //============================================================================
 // Name        : test.cpp
-// Author      : Lin Li, Aristool AG Switzerland
-// Version     : 1.0, July 2008
-// Copyright   : READ group Norway, all rights reserved
+// Author      : Sanyu Ye,  SoftSeis,  Norway
+// Version     : 1.1, Sept. 2020
+// Copyright   : SoftSeis, Norway, all rights reserved
 //============================================================================
 
 #include <iostream>

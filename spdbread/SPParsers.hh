@@ -1,8 +1,8 @@
 //============================================================================
 // Name        : SPParsers.hh
-// Author      : Lin Li, Aristool AG Switzerland
-// Version     : 1.0, Aug. 2008
-// Copyright   : READ group Norway, all rights reserved
+// Author      : Sanyu Ye,  SoftSeis,  Norway
+// Version     : 1.1, Sept. 2020
+// Copyright   : SoftSeis, Norway, all rights reserved
 //============================================================================
 #ifndef SPPARSERS_H_
 #define SPPARSERS_H_

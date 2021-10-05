@@ -1,9 +1,8 @@
 //============================================================================
 // Name        : SPAccessors.cpp
-// Author      : Lin Li, Aristool AG Switzerland
-// Version     : 1.0, July 2008, 1.1, June 2020
-// Last updated: Sanyu Ye, SoftSeis
-// Copyright   : SoftSeis, Oslo Norway, all rights reserved
+// Author      : Sanyu Ye,  SoftSeis,  Norway
+// Version     : 1.1, Sept. 2020
+// Copyright   : SoftSeis, Norway, all rights reserved
 //============================================================================
 #include "SPAccessors.hh"
 
