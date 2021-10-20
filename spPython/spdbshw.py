@@ -6,7 +6,7 @@ import shutil
 import re
 from sets import Set
 from math import *
-#from pysqlite2 import dbapi2 as sqlite3
+from pysqlite2 import dbapi2 as sqlite3
 
 class commandLine(object):
 

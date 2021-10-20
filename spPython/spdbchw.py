@@ -2,7 +2,7 @@
 
 import sys
 import os
-#from pysqlite2 import dbapi2 as sqlite3
+from pysqlite2 import dbapi2 as sqlite3
 from math import *
 
 class commandLine(object):
